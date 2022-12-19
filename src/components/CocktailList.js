@@ -13,7 +13,7 @@ const CocktailList = () => {
   if (cocktails.length < 1) {
     return (
       <h2 className="section-title">
-        no cocktails matched your search criteria
+        No cocktails matched your search criteria
       </h2>
     );
   }
@@ -22,9 +22,9 @@ const CocktailList = () => {
       <h2 className='section-title'>
         Cocktail
       </h2>
-      <div className='cocktail-center'>
+      <div className='cocktails-center'>
         {cocktails.map((item) => {
-          return <Cocktail key={item.id} {...item} />
+          return <Cocktail key={item.name} {...item} />
         })}
       </div>
     </section>
